@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codecademy Cheatsheets All-in-One</title>
+</head>
+<body>
+    <h1>Introduction</h1>
+        <p>The purpose of this site is to be a repository of all the cheatsheets that are provided by Codecademy. Instead of having to look through several pages or PDFs, my hope is that this will be a ever-udpated document that I, and possible others, can use.</p>
+    <h1>HTML</h1>
+        <p>The follow is a list of the <strong>HTML</strong> elements listed on the Codecademy cheatsheets.</p>
+<!--Start of HTML Elements Table-->
+    <div class="table">
+        <table id="html_elements">
+            <thead><a href="https://www.codecademy.com/learn/paths/fscj-22-web-development-foundations/tracks/fscj-22-fundamentals-of-html/modules/wdcp-22-learn-html-elements-bb06b814-30b2-4873-9450-18c0a1fa7124/cheatsheet" target="_blank">HTML Elements</a>
+                <tr>
+                    <th id="tag">Tag</th>
+                    <th id="name">Name</th>
+                    <th id="description">Description</th>
+                    <th id="example">Example</th>
+            </thead>
+                </tr>
+            <tbody>
+                <tr>
+                    <td><xmp><element></element></xmp></td>                        
+                    <td>Element Content</td>
+                    <td>The content of an HTML element is the information between the opening and closing tags of an element.</td>
+                    <td class="example"><xmp><h1>Codecademy is awesome! 🙂</h1></xmp></td>
+                </tr>
+                <tr>
+                    <td><xmp><xmp></xmp></td>
+                    <td>HTML Example Element</td>
+                    <td>Renders the text between the start and end tags without interpreting the HTML in between.
+                    <br>
+                    Note: This sometimes will create a link break.
+                    </td>
+                    <td class="example">&lt;xmp&gt;Here be some code with a &lt;code&gt; element in it&lt;/xmp&gt;</td>
+                </tr>
+                <tr>
+                    <td><xmp>&lt;</xmp></td>
+                    <td>Left Tag</td>
+                    <td>Symbol written within HTML to explicitly define less than symbol.</td>
+                    <td class="example">&lt;NotCode&gt;</td>
+
+                </tr>
+                <tr>
+                    <td><xmp>&gt;</xmp></td>
+                    <td>Right Tag</td>
+                    <td>Symbol written within HTML to explicitly define greater than symbol.</td>
+                    <td class="example">&lt;NotCode&gt;</td>
+                </tr>
+                </tr>
+                <tr>
+                    <td><xmp><li></xmp></td>
+                    <td>List Item Element</td>
+                    <td>The &lt;li&gt; create list items inside:
+                        <ul>
+                            <li><xmp>Ordered lists <ol></xmp></li>
+                            <li><xmp>Unordered lists <ul></xmp></li>
+                        </ul>
+                    </td>
+                    <td class="example">
+<xmp>
+<ol>
+    <li>Head east on Prince St</li>
+    <li>Turn left on Elizabeth</li>
+</ol>
+<ul>
+    <li>Cookies</li>
+    <li>Milk</li>
+</ul>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td><xmp><video></xmp></td>
+                    <td>Video Element</td>
+                    <td>The &lt;video&gt; element embeds a media player for video playback. The src attribute will contain the URL to the video. Adding the controls attribute will display video controls in the media player.
+                    <br>
+                    Note: The content inside the opening and closing tag is shown as a fallback in browsers that don’t support the element.</td>
+                    <td class="example">&lt;video src="test-video.mp4" controls&gt;
+                        Video not supported
+                        &lt;/video&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;em&gt;</td>
+                    <td>Emphasis Element</td>
+                    <td>The &lt;em&gt; element emphasizes text and browsers will usually italicize the emphasized text by default.</td>
+                    <td class="example"><xmp><p>This <em>word</em> will be emphasized in italics.</p></xmp></td>
+                </tr>
+                <tr>
+                    <td>&lt;strong&gt;</td>
+                    <td>Strong Element</td>
+                    <td>The &lt;strong&gt; element highlights important, serious, or urgent text and browsers will normally render this highlighted text in bold by default..</td>
+                    <td class="example"><xmp><p>This is <strong>important</strong> text!</p></xmp></td>
+                </tr>
+                <tr>
+                    <td>&lt;ol&gt;</td>
+                    <td>Ordered List Element</td>
+                    <td>The &lt;ol&gt; element creates a list of items in sequential order. Each list item appears numbered by default.</td>
+                    <td class="example">
+<xmp>
+<ol>
+    <li>Preheat oven to 325 F 👩‍🍳</li>
+    <li>Drop cookie dough 🍪</li>
+    <li>Bake for 15 min ⏰</li>
+</ol>
+</xmp></td>
+                </tr>
+                <tr>
+                    <td>&lt;div&gt;</td>
+                    <td>Div Element</td>
+                    <td>The &lt;div&gt; is used as a container that divides an HTML document into sections and is short for “division”. <div> elements can contain flow content such as headings, paragraphs, links, images, etc.</td>
+                    <td class="example">
+<xmp>
+<div>
+    <h1>A section of grouped elements</h1>
+    <p>Here’s some text for the section</p>
+</div>
+<div>
+    <h1>Second section of grouped elements</h1>
+    <p>Here’s some text</p>
+</div>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td><xmp><element name="value"></element></xmp>></td>
+                    <td>Attribute Name and Values</td>
+                    <td>HTML attributes consist of a name and a value using the following syntax: name="value" and can be added to the opening tag of an HTML element to configure or change the behavior of the element.</td>
+                    <td class="example"><xmp><elementName name="value"></elementName></xmp></td>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>Line Break Element</td>
+                    <td>The &lt;br&gt; will create a line break in text and is especially useful where a division of text is required, like in a postal address. The line break element requires only an opening tag and must not have a closing tag.</td>
+                    <td class="example">
+<xmp>
+A line break haiku.<br>
+Poems are a great use case.<br>
+Oh joy! A line break.
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>Image Element</td>
+                    <td>HTML image &lt;img&gt;s embed images in documents. The src attribute contains the image URL and is mandatory. <img> is an empty element meaning it should not have a closing tag.</td>
+                    <td class="example"><xmp><img src="image.png"></xmp></td>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt;-&lt;h6&gt;</td>
+                    <td>Heading Elements</td>
+                    <td>HTML can use six different levels of heading elements. The heading elements are ordered from the highest level &lt;h1&gt; to the lowest level &lt;h6&gt;.</td>
+                    <td class="example">
+<xmp>
+<h1>Breaking News</h1>
+<h2>This is the 1st subheading</h2>
+<h3>This is the 2nd subheading</h3>
+...
+<h6>This is the 5th subheading</h6>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Paragraph Element</td>
+                    <td>The <p> paragraph element contains and displays a block of text.</td>
+                    <td class="example"><xmp><p>This is a block of text! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></xmp></td>
+                </tr>
+                <tr>
+                    <td>id=""</td>
+                    <td>Unique ID Attributes</td>
+                    <td>In HTML, specific and unique id attributes can be assigned to different elements in order to differentiate between them.
+                    <br>
+                    When needed, the id value can be called upon by CSS and JavaScript to manipulate, format, and perform specific instructions on that element and that element only. Valid id attributes should begin with a letter and should only contain letters (a-Z), digits (0-9), hyphens (-), underscores (_), and periods (.).</td>
+                    <td class="example"><xmp><h1 id="A1">Hello World</h1></xmp></td>
+                </tr>
+                <tr>
+                    <td>alt="text"</td>
+                    <td>alt Attribute</td>
+                    <td>An &lt;img&gt; element can have alternative text via the alt attribute. The alternative text will be displayed if an image fails to render due to an incorrect URL, if the image format is not supported by the browser, if the image is blocked from being displayed, or if the image has not been received from the URL.
+                    <br>
+                    The text will be read aloud if screen reading software is used and helps support visually impaired users by providing a text descriptor for the image content on a webpage.</td>
+                    <td class="example"><xmp><img src="path/to/image" alt="text describing image" /></xmp></td>
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                    <td>Body Element</td>
+                    <td>The &lt;body&gt; represents the content of an HTML document. Content inside &lt;body&gt; tags are rendered on the web browsers.
+                    <br>
+                    Note: There can be only one &lt;body&gt; element in a document.</td>
+                    <td class="example">
+<xmp>
+<body>
+<h1>Learn to code with Codecademy :)</h1>
+</body>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;span&gt;</td>
+                    <td>Span Element</td>
+                    <td>The &lt;span&gt; is an inline container for text and can be used to group text for styling purposes. However, as &lt;span&gt; is a generic container to separate pieces of text from a larger body of text, its use should be avoided if a more semantic element is available.</td>
+                    <td class="example"><xmp><p><span>This text</span> may be styled differently than the surrounding text.</p></xmp></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<br>
+<!--Start of HTML Structure Table-->
+    <div class="table">
+        <table id="html_structure">
+            <thead><a href="https://www.codecademy.com/learn/paths/fscj-22-web-development-foundations/tracks/fscj-22-fundamentals-of-html/modules/wdcp-22-learn-html-structure-c107c169-b1ea-46cc-868e-4ad7c884a44c/cheatsheet" target="_blank">HTML Structure</a>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th id="example">Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>Anchor Element</td>
+                    <td>The &lt;a&gt; is used to create hyperlinks in an HTML document. The hyperlinks can point to other webpages, files on the same server, a location on the same page, or any other URL via the hyperlink reference attribute, href. The href determines the location the anchor element points to.</td>
+                    <td class="example">
+<xmp>
+<!-- Creating text links -->
+<a href="http://www.codecademy.com">Visit this site</a>
+
+<!-- Creating image links -->
+<a href="http://www.codecademy.com">
+	<img src="logo.jpg">Click this image
+</a>
+</xmp>
+                    </td>
+                <tr>
+                    <td>target="_(InsertLocation)"</td>
+                    <td>Target Attribute</td>
+                    <td>Specifies where to open the linked documen</td>
+                    <td class="example"><xmp><a href="http://www.codecademy.com" taget="_blank">Visit this site</a></xmp></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td>Head Element</td>
+                    <td>The &lt;head&gt; element contains general information about an HTML page that isn’t displayed on the page itself. This information is called metadata and includes things like the title of the HTML document and links to stylesheets.</td>
+                    <td class="example">
+<xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+        Metadata is contained in this element
+    </head>
+</html>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Link to a Different Part of the Page #</td>
+                    <td>The &lt;a&gt; can create hyperlinks to different parts of the same HTML document using the href attribute to point to the desired location with # followed by the id of the element to link to.</td>
+                    <td class="example">
+<xmp>
+<div>
+    <p id="id-of-element-to-link-to">A different part of the page!</p>
+</div>
+    
+<a href="#id-of-element-to-link-to">Take me to a different part of the page</a>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;html&gt;</td>
+                    <td>HTML Element</td>
+                    <td>The &lt;html&gt;, the root of an HTML document, should be added after the !DOCTYPE declaration. All content/structure for an HTML document should be contained between the opening and closing &lt;html&gt; tags.</td>
+                    <td class="example">
+<xmp>
+<!DOCTYPE html>
+<html>
+  I'm a comment
+</html>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td><xmp><!--Comment--></xmp></td>
+                    <td>Comments</td>
+                    <td>In HTML, comments can be added between an opening &lt;!-- and closing --&gt;. Content inside of comments will not be rendered by browsers, and are usually used to describe a part of code or provide other details.
+                    <br>
+                    Comments can span single or multiple lines.</td>
+                    <td class="example">
+<xmp>
+<!-- Main site content -->
+<div>Content</div>
+
+<!--
+  Comments can be 
+  multiple lines long.
+-->
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Whitespace</td>
+                    <td>Whitespace, such as line breaks, added to an HTML document between block-level elements will generally be ignored by the browser and are not added to increase spacing on the rendered HTML page. Rather, whitespace is added for organization and easier reading of the HTML document itself.</td>
+                    <td class="example">
+<xmp>
+<p>Test paragraph</p>
+
+<!-- The whitespace created by this line, and above/below this line is ignored by the browser-->
+
+<p>Another test paragraph, this will sit right under the first paragraph, no extra space between.</p>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;</td>
+                    <td>Title Element</td>
+                    <td>The &lt;title&gt; contains a text that defines the title of an HTML document. The title is displayed in the browser’s title bar or tab in which the HTML page is displayed. The &lt;title&gt; can only be contained inside a document’s &lt;head&gt; element.</td>
+                    <td class="example">
+<xmp>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the HTML page</title>
+  </head>
+</html>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">&lt;File Path&gt;</td>
+                    <td>URL paths in HTML can be absolute paths, like a full URL, for example: https://developer.mozilla.org/en-US/docs/Learn or a relative file path that links to a local file in the same folder or on the same server, for example: ./style.css. Relative file paths begin with ./ followed by a path to the local file. ./ tells the browser to look for the file path from the current folder.</td>
+                    <td class="example">
+                        <xmp><a href="https://developer.mozilla.org/en-US/docs/Web">The URL for this anchor element is an absolute file path.</a></xmp>
+                        <xmp><a href="./about.html">The URL for this anchor element is a relative file path.</a></xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;!DOCTYPE html&gt;</td>
+                    <td>Document Type Declaration</td>
+                    <td>The document type declaration &lt;!DOCTYPE html&gt; is required as the first line of an HTML document. The doctype declaration is an instruction to the browser about what type of document to expect and which version of HTML is being used, in this case it’s HTML5.</td>
+                    <td class="example"><xmp><!DOCTYPE html></xmp></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<br>
+<!--Start of HTML Tables Table-->    
+    <div class="table">
+        <table id="html_tables">
+            <thead><a href="https://www.codecademy.com/learn/paths/fscj-22-web-development-foundations/tracks/fscj-22-fundamentals-of-html/modules/wdcp-22-learn-html-tables-6d939404-9baa-4c0a-b70b-229635097539/cheatsheet" target="_blank">HTML Tables</a>
+                <tr>
+                    <th id="tag">Tag</th>
+                    <th id="name">Name</th>
+                    <th id="description">Description</th>
+                    <th id="example">Example</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Table Element</td>
+                    <td>In HTML, the &lt;table&gt; element has content that is used to represent a two-dimensional table made of rows and columns.</td>
+                    <td class="example">
+<xmp>
+<table>
+<!-- rows and columns will go here -->
+</table>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;thead&gt;</td>
+                    <td>Table Head Element</td>
+                    <td>The &lt;thead&gt;, defines the headings of table columns encapsulated in table rows.</td>
+                    <td class="example">
+<xmp>
+<table>
+    <thead>
+        <tr>
+        <th>heading 1</th>
+        <th>heading 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>col 1</td>
+        <td>col 2</td>
+        </tr>
+    </tbody>
+</table>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;tbody&gt;</td>
+                    <td>Table Body Element</td>
+                    <td>The &lt;tbody&gt;, is a semantic element that will contain all table data other than table heading and table footer content. If used, &lt;tbody&gt; will contain all table row &lt;tr&gt;s, and indicates that &lt;tr&gt;s make up the body of the table. &lt;table&gt; cannot have both &lt;tbody&gt; and &lt;tr&gt; as direct children.</td>
+                    <td class="example">
+<xmp>
+<table>
+    <tbody>
+        <tr>
+        <td>row 1</td>
+        </tr>
+        <tr>
+        <td>row 2</td>
+        </tr>
+        <tr>
+        <td>row 3</td>
+        </tr>
+    </tbody>
+</table>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>Table Row Element</td>
+                    <td>The &lt;tr&gt;, is used to add rows to a table before adding table data and table headings.</td>
+                    <td class="example">
+<xmp>
+<table>
+    <tr>
+        ...
+    </tr>
+</table>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Table Data Element</td>
+                    <td>The &lt;td&gt; can be nested inside a table row element, &lt;tr&gt;, to add a cell of data to a table.</td>
+                    <td class="example">
+<xmp>
+<table>
+    <tr>
+        <td>cell one data</td>
+        <td>cell two data</td>
+    </tr>
+</table>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;</td>
+                    <td>Table Heading Element</td>
+                    <td>The &lt;th&gt; is used to add titles to rows and columns of a table and must be enclosed in a &lt;tr&gt;.</td>
+                    <td class="example">
+<xmp>
+<table>
+    <tr>
+        <th>column one</th>
+        <th>column two</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+</table>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>colspan</td>
+                    <td>Column Span Attribute</td>
+                    <td>The colspan attribute on a &lt;th&gt; or &lt;td&gt; element indicates how many columns that particular cell should span within the table. The colspan value is set to 1 by default and will take any positive integer between 1 and 1000.</td>
+                    <td class="example">
+<xmp>
+<table>
+    <tr>
+        <th>row 1:</th>
+        <td>col 1</td>
+        <td>col 2</td>
+        <td>col 3</td>
+    </tr>
+    <tr>
+        <th>row 2:</th>
+        <td colspan="2">col 1 (will span 2 columns)</td>
+        <td>col 2</td>
+        <td>col 3</td>
+    </tr>
+</table>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>rowspan</td>
+                    <td>Row Span Attribute</td>
+                    <td>Similar to <em>colspan</em>, the <em>rowspan</em> attribute on a table header or table data element indicates how many rows that particular cell should span within the table. The <em>rowspan</em> value is set to 1 by default and will take any positive integer up to 65534.</td>
+                    <td class="example">
+<xmp>
+<table>
+    <tr>
+        <th>row 1:</th>
+        <td>col 1</td>
+        <td>col 2</td>
+    </tr>
+    <tr>
+        <th rowspan="2">row 2 (this row will span 2 rows):</th>
+        <td>col 1</td>
+        <td>col 2</td>
+    </tr>
+    <tr>
+        <td>col 1</td>
+        <td>col 2</td>
+    </tr>
+        <tr>
+        <th>row 3:</th>
+        <td>col 1</td>
+        <td>col 2</td>
+    </tr>
+</table>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;tfoot&gt;</td>
+                    <td>Table Footer Element</td>
+                    <td>The &lt;tfoot&gt; uses table rows to give footer content or to summarize content at the end of a table.</td>
+                    <td class="example">
+<xmp>
+<table>
+    <thead>
+        <tr>
+        <th>heading 1</th>
+        <th>heading 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>col 1</td>
+        <td>col 2</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+        <td>summary of col 1</td>
+        <td>summary of col 2</td>
+        </tr>
+    </tfoot>
+</table>
+</xmp>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </table>
+    </div>
+<br>
+<!--Start of HTML Semantics Table-->
+    <div class="table">
+    <table id="html_semantics">
+        <thead><a href="https://www.codecademy.com/learn/paths/fscj-22-web-development-foundations/tracks/fscj-22-fundamentals-of-html/modules/wdcp-22-semantic-html-44fa9550-9f1e-49de-b4d6-295acba84038/cheatsheet" target="_blank">Semantic HTML</a>
+            <tr>
+                <th id="tag">Tag</th>
+                <th id="name">Name</th>
+                <th id="description">Description</th>
+                <th id="example">Example</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">&lt;Semantic HTML&gt;</td>
+                <td>Semantic HTML introduces meaning to the code we write. Before Semantic HTML the elements didn’t have any meaning as to what it does or what content goes in it. An element such as &lt;div&gt; was used as a general-purpose element to create things from headers to footers to articles. With Semantic HTML we were introduced to elements that tell developers and browsers exactly what it does and what content should go in it.</td>
+                <td class="example">
+<xmp>
+<!--Non Semantic HTML-->
+<div id="footer">
+<p>this is a footer</p>
+</div>
+
+<!--Semantic HTML-->
+<footer>
+<p>this is a footer</p>
+</footer>
+</xmp>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">&lt;Element Placement&gt;</td>
+                <td colspan="2">Semantic HTML introduces elements that can tell developers exactly what the element does or where it’s placed based on the name of that element. Some of these elements are &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, and &lt;footer&gt;. &lt;header&gt; describes the content at the top of the page &lt;body&gt;. It may include a logo, navigational links or a search bar. &lt;nav&gt; encapsulates the page’s navigational links. It is often placed inside the &lt;header&gt; or &lt;footer&gt;. &lt;main&gt; encapsulates the main content of a page between the header/navigation and the footer areas. &lt;footer&gt; includes the page’s footer content at the bottom of the &lt;body&gt;.</td>
+            </tr>
+            <tr>
+                <td colspan="2">&lt;Embedding media&gt;</td>
+                <td>Semantic HTML introduces us to &lt;video&gt;, &lt;audio&gt; and &lt;embed&gt;. &lt;video&gt; allows us to add videos to our website. &lt;audio&gt; allows us to implement audio into our website. &lt;embed&gt; can be used to implement any type of media. These elements are universal in that they all use the src attribute to link the source of the content. &lt;video&gt; and &lt;audio&gt; requires a closing tag while &lt;embed&gt; is a self-closing tag.</td>
+                <td class="example">
+<xmp>
+<!--Video Tag-->
+<video src="4kvideo.mp4">video not supported</video>
+
+<!--Audio Tag-->
+<audio src="koreanhiphop.mp3"></audio>
+
+<!--Embed tag-->
+<embed src="babyyoda.gif"/>
+</xmp>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;figure&gt; and &lt;figcaption&gt;</td>
+                <td>Figure and Figure Caption Elements</td>
+                <td>The &lt;figure&gt; is used to encapsulate media such as an image, diagram. or code snippet. The &lt;figcaption&gt; is used to describe the media encapsulated within the &lt;figure&gt;. Developers will normally use &lt;figcaption&gt; within the &lt;figure&gt; to group the media and description. This way, if a developer decides to change the position of the media, the description will follow along with it.</td>
+                <td class="example">
+<xmp>
+<figure>
+<img src="qwerty.jpg">
+<figcaption>The image shows the layout of a qwerty keyboard.</figcaption>
+</figure>
+</xmp>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;section&gt; and &lt;article&gt;</td>
+                <td>Section and Article Elements</td>
+                <td>&lt;section&gt; defines elements in a document, such as chapters, headings, or any other area of the document with the same theme. &lt;article&gt; holds content that makes sense on its own such as articles, blogs, and comments. Generally developers will use &lt;section&gt; to define a theme for the webpage and use &lt;article&gt; to write independent content for that theme. This does not mean that &lt;article&gt; has to be used with &lt;section&gt;.</td>
+                <td class="example">
+<xmp>
+<section>
+<!--defines theme-->
+<h2>Top Sports league in America</h2>
+<!--writes independent content relating to that theme-->
+<article>
+    <p>One of the top sports league is the nba.</p>
+</article>
+</section>
+</xmp>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;aside&gt;</td>
+                <td>Aside Element</td>
+                <td>The &lt;aside&gt; element is used to mark additional information that can enhance another element but isn’t required in order to understand the main content. Usually, this information would be in a sidebar or a location where it doesn’t obstruct the main piece of content. An example of this would be an article that discusses how to take care of a dog and next to the article an ad would appear advertising a dog grooming product.</td>
+                <td class="example">
+<xmp>
+<article>
+<!--Main Content-->
+</article>
+<aside>
+<!--Additional information-->
+</aside>
+</xmp>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+<br>
+    <h1>CSS</h1>
+    <p>The follow is a list of the <strong>CSS</strong> elements listed on the Codecademy cheatsheets.</p>
+<!--Start of CSS Selectors and Visual Rules Table-->
+    <div class="table">
+
+        <table id="css_selectors_visuals">
+            <thead><a href="https://www.codecademy.com/learn/paths/fscj-22-web-development-foundations/tracks/fscj-22-fundamentals-of-css/modules/wdcp-22-learn-css-selectors-and-visual-rules-0507dd23-134e-4011-af2c-a06b06ad53f2/cheatsheet" target="_blank">CSS: Selectors and Visual Rules</a>
+                <tr>
+                    <th id="tag">Tag</th>
+                    <th id="name">Name</th>
+                    <th id="description">Description</th>
+                    <th id="example">Example</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;link&gt;</td>
+                    <td>Link Element</td>
+                    <td>The &lt;link&gt; is used to link HTML documents to external resources like CSS files. It commonly uses:
+                        <ul>
+                            <li>href attribute to specify the URL to the external resource
+                            <li>rel attribute to specify the relationship of the linked document to the current document</li>
+                            <li>type attribute to define the type of content being linked</li>
+                        </ul>
+                    </td>
+                    <td class="example">
+<xmp><link href="./path/to/stylesheet/style.css" rel="stylesheet" type="text/css"></xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Write CSS in Separate File</td>
+                    <td>CSS code can be written in its own files to keep it separate from the HTML code. The extension for CSS files is .css. These can be linked to an HTML file using a &lt;link&gt; tag in the &lt;head&gt; section.</td>
+                    <td class="example">
+<xmp>
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Write CSS in HTML File</td>
+                    <td>CSS code can be written in an HTML file by enclosing the code in &lt;style&gt; tags. Code surrounded by &lt;style&gt; tags will be interpreted as CSS syntax.</td>
+                    <td class="example">
+<xmp>
+<head>
+    <style>
+        h1 {
+        color: blue;
+        }
+    </style>
+</head>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Inline Style</td>
+                    <td>CSS styles can be directly added to HTML elements by using the style attribute in the element’s opening tag. Each style declaration is ended with a semicolon. Styles added in this manner are known as inline styles.</td>
+                    <td class="example">
+<xmp>
+<h2 style="text-align: center;">Centered text</h2>
+
+<p style="color: blue; font-size: 18px;">Blue, 18-point text</p>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.class</td>
+                    <td>Class Selector</td>
+                    <td>CSS classes can be reusable and applied to many elements. Class selectors are denoted with a period . followed by the class name.</td>
+                    <td class="example">
+<xmp>
+/* Selects all elements with class="column" */
+.column {
+    }
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#id</td>
+                    <td>ID Selector</td>
+                    <td>CSS ID selectors should be unique and used to style only a single element. ID selectors are denoted with a hash sign # followed by the id name.</td>
+                    <td class="example">
+<xmp>
+/* Selects element with id="first-item" */
+#first-item {
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">CSS ID Selectors</td>
+                    <td>The CSS ID selector matches elements based on the contents of their id attribute. The values of id attribute should be unique in the entire DOM. For selecting the element having job-title as the value of the id attribute, a # needs to be prepended.</td>
+                    <td class="example">
+<xmp>
+#job-title {
+    font-weight: bold;
+    }
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Groups of CSS Selectors</td>
+                    <td>Match multiple selectors to the same CSS rule, using a comma-separated list. In this example, the text for both h1 and h2 is set to red.</td>
+                    <td class="example">
+<xmp>
+h1, h2 {
+    color: red;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Chaining Selectors</td>
+                    <td>CSS selectors can be chained so that rule sets apply only to elements that match all criteria. For instance, to select &lt;h3&gt; elements that also have the section-heading class, the selector h3.section-heading can be used</td>
+                    <td class="example">
+<xmp>
+/* Select h3 elements with the section-heading class */
+h3.section-heading {
+    color: blue;
+}
+
+/* Select elements with the section-heading and button class */
+.section-heading.button {
+    cursor: pointer;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">CSS Type Selectors</td>
+                    <td>CSS type selectors are used to match all elements of a given type or tag name. Unlike for HTML syntax, we do not include the angle brackets when using type selectors for tag names. When using type selectors, elements are matched regardless of their nesting level in the HTML.</td>
+                    <td class="example">
+<xmp>
+/* Selects all <p> tags */
+    p {
+    }
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">CSS Class Selectors</td>
+                    <td>The CSS class selector matches elements based on the contents of their class attribute. For selecting elements having calendar-cell as the value of the class attribute, a . needs to be prepended.</td>
+                    <td class="example">
+<xmp>
+.calendar-cell {
+    color: #fff;
+    }
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">HTML Attributes with Multiple Values</td>
+                    <td>Some HTML attributes can have multiple attribute values. Multiple attribute values are separated by a space between each attribute.</td>
+                    <td class="example"><xmp><div class="value1 value2 value3"></div></xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Selector Specificity</td>
+                    <td>Specificity is a ranking system that is used when there are multiple conflicting property values that point to the same element. When determining which rule to apply, the selector with the highest specificity wins out. The most specific selector type is the ID selector, followed by class selectors, followed by type selectors. In this example, only color: blue will be implemented as it has an ID selector whereas color: red has a type selector.</td>
+                    <td class="example">
+<xmp>
+h1#header {
+    color: blue;
+} /* implemented */
+    
+    h1 {
+    color: red;
+} /* Not implemented */
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">CSS Descendant Selector</td>
+                    <td>The CSS <em>descendant</em> selector combinator is used to match elements that are descended from another matched selector. They are denoted by a single space between each selector and the descended selector. All matching elements are selected regardless of the nesting level in the HTML.</td>
+                    <td class="example">
+<xmp>
+div p { }
+
+section ol li { }
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">CSS Declarations</td>
+                    <td>In CSS, a <em>declaration</em> is the key-value pair of a CSS property and its value. CSS declarations are used to set style properties and construct rules to apply to individual or groups of elements. The property name and value are separated by a colon, and the entire declaration must be terminated by a semi-colon.</td>
+                    <td class="example">
+<xmp>
+/* 
+CSS declaration format:
+property-name: value;
+*/
+
+/* CSS declarations */
+text-align: center;
+color: purple;
+width: 100px;
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Font Size</td>
+                    <td>The font-size CSS property is used to set text sizes. Font size values can be many different units or types such as pixels.</td>
+                    <td class="example"><xmp>font-size: 30px;</xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Background Color</td>
+                    <td>The background-color CSS property controls the background color of elements.</td>
+                    <td class="example"><xmp>background-color: blue;</xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">!important Rule</td>
+                    <td>The CSS !important rule is used on declarations to override any other declarations for a property and ignore selector specificity. !important rules will ensure that a specific declaration always applies to the matched elements. However, generally it is good to avoid using !important as bad practice.</td>
+                    <td class="example">
+<xmp>
+#column-one {
+    width: 200px !important;
+    }
+    
+    .post-title {
+    color: blue !important;
+    }
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Opacity</td>
+                    <td>The <em>opacity</em> CSS property can be used to control the transparency of an element. The value of this property ranges from 0 (transparent) to 1 (opaque).</td>
+                    <td class="example"><xmp>opacity: 0.5;</xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Font Weight</td>
+                    <td>The <em>font-weight</em> CSS property can be used to set the weight (boldness) of text. The provided value can be a keyword such as <em>bold</em> or <em>normal</em>.</td>
+                    <td class="example"><xmp>font-weight: bold;</xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Text Align</td>
+                    <td>The <em>text-align</em> CSS property can be used to set the text alignment of inline contents. This property can be set to these values: <em>left</em>, <em>right</em>, or <em>center</em>.</td>
+                    <td class="example"><xmp>text-align: right</xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">CSS Rule Sets</td>
+                    <td>A CSS rule set contains one or more selectors and one or more declarations. The selector(s), which in this example is <em>h1</em>, points to an HTML element. The declaration(s), which in this example are <em>color: blue</em> and <em>text-align: center</em> style the element with a property and value. The rule set is the main building block of a CSS sheet.</td>
+                    <td class="example">
+<xmp>
+h1 {
+    color: blue;
+    text-align: center;
+    }
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Setting Foreground Text Color is CSS</td>
+                    <td>Using the <em>color</em> property, foreground text color of an element can be set in CSS. The value can be a valid color name supported in CSS like <em>green</em> or <em>blue</em>. Also, 3 digit or 6 digit color code like <em>#22f</em> or <em>#2a2aff</em> can be used to set the color.</td>
+                    <td class="example">
+<xmp>
+p {
+    color : #2a2aff ;
+}
+    
+span {
+    color : green ;
+}
+</xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Resource URLs</td>
+                    <td>In CSS, the <em>url()</em> function is used to wrap resource URLs. These can be applied to several properties such as the <em>background-image</em>.</td>
+                    <td class="example"><xmp>background-image: url("../resources/image.png");</xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Background Image</td>
+                    <td>The <em>background-image</em> CSS property sets the background image of an element. An image URL should be provided in the syntax <em>url("moon.jpg")</em> as the value of the property.</td>
+                    <td class="example"><xmp>background-image: url("nyan-cat.gif");</xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Font Family</td>
+                    <td>The <em>font-family</em> CSS property is used to specify the typeface in a rule set. Fonts must be available to the browser to display correctly, either on the computer or linked as a web font. If a font value is not available, browsers will display their default font. When using a multi-word font name, it is best practice to wrap them in quotes.</td>
+                    <td class="example">
+<xmp>
+h2 {
+    font-family: Verdana;
+}
+    
+#page-title {
+    font-family: "Courier New";
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Color Name Keywords</td>
+                    <td>Color name keywords can be used to set color property values for elements in CSS.</td>
+                    <td class="example">
+<xmp>
+h1 {
+    color: aqua;
+}
+    
+li {
+    color: khaki;
+}
+</xmp>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<br></br>
+<!--Start of CSS: The Box Model Table-->
+    <div class="table">
+        <table id="css_box">
+            <thead><a href="https://www.codecademy.com/learn/paths/fscj-22-web-development-foundations/tracks/fscj-22-fundamentals-of-css/modules/wdcp-22-learn-css-the-box-model-c8543ca0-92d4-4824-bb89-35a1fb0189d4/cheatsheet" target="_blank">CSS: The Box Model</a>
+                <tr>
+                    <th colspan="2" id="name">Name</th>
+                    <th id="description">Description</th>
+                    <th id="example">Example</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">CSS Margin Collapse</td>
+                    <td>CSS <em>margin collapse</em> occurs when the top and bottom margins of blocks are combined into a single margin equal to the largest individual block margin.
+
+                        Margin collapse only occurs with vertical margins, not for horizontal margins.</td>
+                    <td class="example">
+<xmp>
+/* The vertical margins will collapse to 30 pixels
+instead of adding to 50 pixels. */
+.block-one {
+    margin: 20px;
+}
+
+.block-two {
+    margin: 30px;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">CSS Auto Keyword</td>
+                    <td>The value <em>auto</em> can be used with the property <em>margin</em> to horizontally center an element within its container. The <em>margin</em> property will take the width of the element and will split the rest of the space equally between the left and right margins.</td>
+                    <td class="example">
+<xmp>
+div {
+    margin: auto;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Dealing With Overflow</td>
+                    <td>If content is too large for its container, the CSS <em>overflow</em> property will determine how the browser handles the problem.
+                    <br>
+                    By default, it will be set to <em>visible</em> and the content will take up extra space. It can also be set to <em>hidden</em>, or to <em>scroll</em>, which will make the overflowing content accessible via scroll bars within the original container.</td>
+                    <td class="example">
+<xmp>
+small-block {
+    overflow: scroll;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Height and Width Maximums/Minimums</td>
+                    <td>The CSS <em>min-width</em> and <em>min-height</em> properties can be used to set a minimum width and minimum height of an element’s box. CSS <em>max-width</em> and <em>max-height</em> properties can be used to set maximum widths and heights for element boxes.</td>
+                    <td class="example">
+<xmp>
+/* Any element with class "column" will be at most 200 pixels wide, despite the width property value of 500 pixels. */
+
+.column {
+    max-width: 200px;
+    width: 500px;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">The visibility Property</td>
+                    <td>The CSS <em>visibility</em> property is used to render <em>hidden</em> objects invisible to the user, without removing them from the page. This ensures that the page structure and organization remain unchanged.</td>
+                    <td class="example">
+<xmp>
+.invisible-elements {
+    visibility: hidden;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">The property box-sizing of CSS box model</td>
+                    <td>The CSS box model is a box that wraps around an HTML element and controls the design and layout. The property <em>box-sizing</em> controls which aspect of the box is determined by the <em>height</em> and <em>width</em> properties. The default value of this property is content-box, which renders the actual size of the element including the content box; but not the paddings and borders. The value <em>border-box</em>, on the other hand, renders the actual size of an element including the content box, paddings, and borders.</td>
+                    <td class="example">
+<xmp>
+.container {
+    box-sizing: border-box;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>git push origin master --force
+                    <td colspan="2">CSS box-sizing: border-box</td>
+                    <td>The value <em>border-box</em> of the <em>box-sizing</em> property for an element corresponds directly to the element’s total rendered size, including padding and border with the <em>height</em> and <em>width</em> properties.
+                    <br>
+                    The default value of the <em>box-sizing</em> property is <em>content-box</em>. The value <em>border-box</em> is recommended when it is necessary to resize the <em>padding</em> and <em>border</em> but not just the content. For instance, the value border-box calculates an element’s <em>height</em> as follows: <em>height = content height + padding + border</em>.</td>
+                    <td class="example">
+<xmp>
+#box-example {
+    box-sizing: border-box;
+}
+</xmp>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+<!--Below is a template table row to copy/paste
+                    <tr>
+                        <td>&lt;tag&gt;</td>
+                        <td>name</td>
+                        <td>description</td>
+                        <td class="example"><xmp>example</xmp></td>
+                    </tr>
+-->
+
+<!--Below is a template table to copy/paste
+        <table id="html_elements">
+            <thead><a href="INSERT URL" target="_blank">Title</a>
+                <tr>
+                    <th id="tag">Tag</th>
+                    <th id="name">Name</th>
+                    <th id="description">Description</th>
+                    <th id="example">Example</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;tag&gt;</td>
+                    <td>name</td>
+                    <td>description</td>
+                    <td class="example">
+<xmp>
+example
+</xmp>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+-->
