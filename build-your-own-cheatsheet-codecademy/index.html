@@ -11,6 +11,91 @@
         <p>The purpose of this site is to be a repository of all the cheatsheets that are provided by Codecademy. Instead of having to look through several pages or PDFs, my hope is that this will be a ever-udpated document that I, and possible others, can use.</p>
     <h1>HTML</h1>
         <p>The follow is a list of the <strong>HTML</strong> elements listed on the Codecademy cheatsheets.</p>
+<!--Start of Command Line for Building Websites-->
+    <div>
+        <table id="command_line">
+            <thead><a href="https://www.codecademy.com/learn/paths/fscj-22-web-development-foundations/tracks/fscj-22-deploying-websites/modules/wdcp-22-command-line-for-building-websites-882bca36-730b-44af-9f3f-fff9c60073e7/cheatsheet" target="_blank">Command Line for Building Websites</a>
+                <tr>
+                    <th id="tag">Tag</th>
+                    <th id="name">Name</th>
+                    <th id="description">Description</th>
+                    <th id="example">Example</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;pwd&gt;</td>
+                    <td>Print Working Directory</td>
+                    <td>The shell command <em>pwd</em> displays the file path from the root directory to the current working directory.</td>
+                    <td class="example">
+<xmp>
+$ pwd
+/Users/sonny/Downloads
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;tag&gt;</td>
+                    <td>name</td>
+                    <td>description</td>
+                    <td class="example">
+<xmp>
+example
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;tag&gt;</td>
+                    <td>name</td>
+                    <td>description</td>
+                    <td class="example">
+<xmp>
+example
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;tag&gt;</td>
+                    <td>name</td>
+                    <td>description</td>
+                    <td class="example">
+<xmp>
+example
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;tag&gt;</td>
+                    <td>name</td>
+                    <td>description</td>
+                    <td class="example">
+<xmp>
+example
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;tag&gt;</td>
+                    <td>name</td>
+                    <td>description</td>
+                    <td class="example">
+<xmp>
+example
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;tag&gt;</td>
+                    <td>name</td>
+                    <td>description</td>
+                    <td class="example">
+<xmp>
+example
+</xmp>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 <!--Start of HTML Elements Table-->
     <div class="table">
         <table id="html_elements">
@@ -1069,78 +1154,137 @@ small-block {
         <table id="css_display">
             <thead><a href="https://www.codecademy.com/learn/paths/fscj-22-web-development-foundations/tracks/fscj-22-fundamentals-of-css/modules/wdcp-22-learn-css-display-and-positioning-fcf96efc-f6fb-4002-bdb4-f4f6b4b3d52c/cheatsheet" target="_blank">CSS: Display and Positioning</a>
                 <tr>
-                    <th id="tag">Tag</th>
-                    <th id="name">Name</th>
+                    <th colspan="2" id="name">Name</th>
                     <th id="description">Description</th>
                     <th id="example">Example</th>
             </thead>
             <tbody>
                 <tr>
-                    <td colspan="2">name</td>
-                    <td>description</td>
+                    <td colspan="2">CSS z-index property</td>
+                    <td>The CSS <em>z-index</em> property specifies how far back or how far forward an element will appear on a web page when it overlaps other elements.
+                    <br>
+                    The <em>z-index</em> property uses integer values, which can be positive or negative values. The element with the highest <em>z-index</em> value will be at the foreground, while the element with the lowest <em>z-index</em> value will be at the back.</td>
                     <td class="example">
 <xmp>
-example
+//`element1` will overlap `element2`
+.element1 {
+    position: absolute;
+    z-index: 1;
+}
+
+.element2 {
+    position: absolute;
+    z-index: -1;
+}
 </xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">name</td>
-                    <td>description</td>
+                    <td colspan="2">Fixed CSS Positioning</td>
+                    <td>Positioning in CSS provides designers and developers options for positioning HTML elements on a web page. The CSS <em>position</em> can be set to <em>static</em>, <em>relative</em>, <em>absolute</em> or <em>fixed</em>. When the CSS position has a value of <em>fixed</em>, it is set/pinned to a specific spot on a page. The fixed element stays the same regardless of scrolling. The navigation bar is a great example of an element that is often set to <em>position: fixed;</em>, enabling the user to scroll through the web page and still access the navigation bar.</td>
                     <td class="example">
 <xmp>
-example
+#navbar {
+    position: fixed;
+}
 </xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">name</td>
-                    <td>description</td>
+                    <td colspan="2">CSS display property</td>
+                    <td>The CSS <em>display</em> property determines the type of render block for an element. The most common values for this property are <em>block</em>, <em>inline</em>, and <em>inline-block</em>.
+                    <br>
+                    <em>Block-level</em> elements take up the full width of their container with line breaks before and after, and can have their height and width manually adjusted.
+                    <br>
+                    <em>Inline elements</em> take up as little space as possible, flow horizontally, and cannot have their width or height manually adjusted.
+                    <br>
+                    <em>Inline-block</em> elements can appear next to each other, and can have their width and height manually adjusted.</td>
                     <td class="example">
 <xmp>
-example
+.container1 {
+    display: block;
+}
+    
+.container2 {
+    display: inline;
+}
+    
+.container3 {
+    display: inline-block;
+}
 </xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">name</td>
-                    <td>description</td>
+                    <td colspan="2">CSS position: absolute</td>
+                    <td>The value <em>absolute</em> for the CSS property <em>position</em> enables an element to ignore sibling elements and instead be positioned relative to its closest parent element that is positioned with <em>relative</em> or <em>absolute</em>. The <em>absolute</em> value removes an element entirely from the document flow. By using the positioning attributes <em>top</em>, <em>left</em>, <em>bottom</em> and <em>right</em>, an element can be positioned anywhere as expected.</td>
                     <td class="example">
 <xmp>
-example
+.element {
+    position: absolute;
+}
 </xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">name</td>
-                    <td>description</td>
+                    <td colspan="2">CSS position: relative</td>
+                    <td>The value <em>relative</em> of the CSS <em>position</em> property enables an element to be positioned relative to where it would have originally been on a web page. The offset properties can be used to determine the actual position of the element relative to its original position. Without the offset properties, this declaration will have no effect on its positioning, it will act as the default value <em>static</em> of the <em>position</em> property.</td>
                     <td class="example">
 <xmp>
-example
+.element {
+    position: relative;
+}
 </xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">name</td>
-                    <td>description</td>
+                    <td colspan="2">CSS float property</td>
+                    <td>The CSS <em>float</em> property determines how far left or how far right an element should float within its parent element. The value <em>left</em> floats an element to the left side of its container and the value <em>right</em> floats an element to the right side of its container. For the property <em>float</em>, the <em>width</em> of the container must be specified or the element will assume the full width of its containing element.</td>
                     <td class="example">
 <xmp>
-example
+/* The content will float to the left side of the container. */
+.left {
+    float: left;
+}
+
+/* The content will float to the right side of the container. */
+.right {
+    float: right;
+}
 </xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">name</td>
-                    <td>description</td>
+                    <td colspan="2">The CSS clear property</td>
+                    <td>The CSS <em>clear</em> property specifies how an element should behave when it bumps into another element within the same containing element.The <em>clear</em> is usually used in combination with elements having the CSS <em>float</em> property. This determines on which sides floating elements are allowed to float.</td>
                     <td class="example">
 <xmp>
-example
+/*This determines that no other elements within the same containing element are allowed to float on the left side of this element.*/
+.element {
+    clear: left;
+}
+
+/*This determines that no other elements within the same containing element are allowed to float on the right side of this element.*/
+.element {
+    clear: right;
+}
+
+/*This determines that no elements within the same containing element are allowed to float on either side of this element.*/
+.element {
+    clear: both;
+}
+
+/*This determines that other elements within the same containing element are allowed to float on both side of this element.*/
+.element {
+    clear: none;
+}
 </xmp>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <br>
 </body>
 </html>
 
