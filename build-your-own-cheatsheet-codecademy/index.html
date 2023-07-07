@@ -1148,7 +1148,7 @@ small-block {
         </table>
     </div>
 <br>
-<!--Start of CSS: Display and Positioning Table-->
+<!--Start of CSS: Colors-->
     <div>
         <table id="css_display">
             <thead><a href="https://www.codecademy.com/learn/paths/fscj-22-web-development-foundations/tracks/fscj-22-fundamentals-of-css/modules/wdcp-22-learn-css-display-and-positioning-fcf96efc-f6fb-4002-bdb4-f4f6b4b3d52c/cheatsheet" target="_blank">CSS: Display and Positioning</a>
@@ -1285,22 +1285,66 @@ small-block {
     </div>
     <br>
     <div class="table">
-        <table id="html_elements">
-            <thead><a href="INSERT URL" target="_blank">Title</a>
+        <table id="css_colors">
+            <thead><a href="https://www.codecademy.com/learn/paths/fscj-22-web-development-foundations/tracks/fscj-22-improved-styling-with-css/modules/wdcp-22-learn-css-colors-fb7afde0-5376-43ed-86ba-c87c41749e61/cheatsheet" target="_blank">CSS: Colors</a>
                 <tr>
-                    <th id="tag">Tag</th>
-                    <th id="name">Name</th>
+                    <th colspan="2" id="name">Name</th>
                     <th id="description">Description</th>
                     <th id="example">Example</th>
             </thead>
             <tbody>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td colspan="2">Color Name Keywords</td>
+                    <td>Color name keywords can be used to set color property values for elements in CSS.</td>
                     <td class="example">
 <xmp>
-example
+h1 {
+    color: aqua;
+}
+
+    li {
+    color: khaki;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">CSS Color Alpha Values</td>
+                    <td><em>Alpha values</em> determine the transparency of colors in CSS. Alpha values can be set for both RGB and HSL colors by using <em>rgba()</em> and <em>hsla()</em> and providing a fourth value representing alpha. Alpha values can range between 0.0 (totally transparent) and 1.0 (totally opaque).
+                    <br>
+                    The CSS <em>transparent</em> value can also be used to create a fully transparent element.</td>
+                    <td class="example">
+<xmp>
+.midground {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+    
+.foreground {
+    background-color: hsla(34, 100%, 50%, 0.1);
+}
+    
+.transparent {
+    color: transparent;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">CSS Hexadecimal Colors</td>
+                    <td>CSS colors can be represented in <em>hexadecimal</em> (or <em>hex</em>) notation. Hexadecimal digits can represent sixteen different values using 0-9 and a-f.
+                    <br>
+                    Hexadecimal colors are composed of 6 characters–each group of two represents a value between 0 and 255 for red, green, or blue. For example #ff0000 is all red, no green, and no blue.
+                    <br>
+                    When both characters of all three colors are repeated, hex colors can be abbreviated to only three values, so #0000ff could also be represented as #00f.</td>
+                    <td class="example">
+<xmp>
+.red {
+    color: #ff0000;
+}
+    
+.short-blue {
+    color: #00f;
+}
 </xmp>
                     </td>
                 </tr>
