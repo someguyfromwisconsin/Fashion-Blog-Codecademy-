@@ -12,18 +12,18 @@
     <h1>HTML</h1>
         <p>The follow is a list of the <strong>HTML</strong> elements listed on the Codecademy cheatsheets.</p>
 <!--Start of Command Line for Building Websites-->
-    <div>
+    <div class="table">
         <table id="command_line">
             <thead><a href="https://www.codecademy.com/learn/paths/fscj-22-web-development-foundations/tracks/fscj-22-deploying-websites/modules/wdcp-22-command-line-for-building-websites-882bca36-730b-44af-9f3f-fff9c60073e7/cheatsheet" target="_blank">Command Line for Building Websites</a>
                 <tr>
-                    <th id="tag">Tag</th>
+                    <th id="tag">Command</th>
                     <th id="name">Name</th>
                     <th id="description">Description</th>
                     <th id="example">Example</th>
             </thead>
             <tbody>
                 <tr>
-                    <td>&lt;pwd&gt;</td>
+                    <td>pwd</td>
                     <td>Print Working Directory</td>
                     <td>The shell command <em>pwd</em> displays the file path from the root directory to the current working directory.</td>
                     <td class="example">
@@ -34,68 +34,67 @@ $ pwd
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td>mkdir</td>
+                    <td>Make Directory</td>
+                    <td>The shell command <em>mkdir</em> is used to make a new directory in the filesystem according to its argument. If a file path is given, the new directory will be placed at the end. Otherwise, it will create a new directory in the current working directory.</td>
                     <td class="example">
 <xmp>
-example
+$ mkdir new-directory
+$ ls 
+old-directory    new-directory
 </xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
+                    <td>ls</td>
+                    <td>List</td>
                     <td>description</td>
                     <td class="example">
 <xmp>
-example
+$ ls Desktop
+resume.pdf
+photo.png
 </xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td>cd</td>
+                    <td>Command Directory</td>
+                    <td>The shell command cd is used to move throughout the filesystem of a computer. It accepts a variety of arguments:
+                        <ul>
+                            <li>Full file paths.</li>
+                            <li>Names of children of the current directory.</li>
+                            <li>.. the parent of the current directory.</li>
+                        </ul>
+                    </td>
                     <td class="example">
 <xmp>
-example
+$ cd some-directory
+$ cd ..
 </xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
-                    <td class="example">
-<xmp>
-example
-</xmp>
-                    </td>
+                    <td>touch</td>
+                    <td>Create New File</td>
+                    <td>The shell command <em>touch</em> creates a new file in the current working directory with the name provided.</td>
+                    <td class="example"><xmp>$ touch grocery-list.txt</xmp></td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td colspan="2">Helper Commands</td>
+                    <td>Helper commands for the command line include:</td>
                     <td class="example">
-<xmp>
-example
-</xmp>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
-                    <td class="example">
-<xmp>
-example
-</xmp>
+                        <ul>
+                            <li>clear to clear the terminal</li>
+                            <li>tab to autocomplete the line</li>                            
+                            <li>↑ and ↓ to cycle through previous commands</li>
+                        </ul>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <br>
 <!--Start of HTML Elements Table-->
     <div class="table">
         <table id="html_elements">
@@ -1285,6 +1284,28 @@ small-block {
         </table>
     </div>
     <br>
+    <div class="table">
+        <table id="html_elements">
+            <thead><a href="INSERT URL" target="_blank">Title</a>
+                <tr>
+                    <th id="tag">Tag</th>
+                    <th id="name">Name</th>
+                    <th id="description">Description</th>
+                    <th id="example">Example</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;tag&gt;</td>
+                    <td>name</td>
+                    <td>description</td>
+                    <td class="example">
+<xmp>
+example
+</xmp>
+                    </td>
+                </tr>
+            </tbody>
+    </div>
 </body>
 </html>
 
