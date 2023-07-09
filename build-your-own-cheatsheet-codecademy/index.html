@@ -1470,15 +1470,107 @@ p {
             </thead>
             <tbody>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td>&lt;a:____&gt;</td>
+                    <td>Link States</td>
+                    <td>Links have four main states: normal (not clicked), hover, active (clicked), and visited. These four states have associated CSS pseudo-classes: <em>:link</em>, <em>:hover</em>, <em>:active</em>, and <em>:visited</em>. These four states can be used to give a full range of visual feedback to users about the status of their link interaction.
+
+                    </td>
                     <td class="example">
 <xmp>
-example
+a:link
+.question-link:visited
+.another-part-of-the-page:hover
+a:active
 </xmp>
                     </td>
                 </tr>
+                <tr>
+                    <td>:active</td>
+                    <td>Active State</td>
+                    <td>Alters the appearance of a link/button when clicked (and held).</td>
+                    <td class="example">
+<xmp>
+.answer:active {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0px 0px;
+    background-color: #C0D6DF;
+    color: #ffffff;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Skeuomorphic Button</td>
+                    <td>Skeuomorphic button design aims to imitate the appearance and interactivity of a real-life button, often including a ‘raised’ appearance while the button is unpressed and a ‘pressed’ appearance when clicked.</td>
+                    <td class="example">
+<xmp>
+button {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0px 5px;
+}
+    
+button:hover {
+    cursor: pointer;
+}
+    
+button:active {
+    margin-top: 5px;
+    color: black;
+    box-shadow: 0px 0px;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>box shadow: _px _px</td>
+                    <td>Box Shadow</td>
+                    <td>Give a button a raised appearance. The first number is the offset-x, the second the offset-y</td>
+                    <td class="example">
+<xmp>
+.button {
+    box-shadow: 0px 4px;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Flat Button Design</td>
+                    <td>Flat design is so-called because of its 2-D appearance. Elements appear flat on the screen, and designers must rely on other styling and signifiers to indicate clickability.</td>
+                    <td class="example">
+<xmp>
+.answer {
+    border: solid 1px #466995;
+}
+    
+.answer:active {
+    background-color: #C0D6DF;
+    color: #ffffff;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>:hover</td>
+                    <td>Hover State</td>
+                    <td>Changes the state of the link/button when the pointer is placed over it. Users expect buttons to be clickable. Since buttons can consist of any number of total elements (rectangular/circular body, text, image(s)), all elements should be clickable, should display their clickability, and should result in the same behavior.
+                    <br>
+                    Note: If there is an :active state used as well, the :hover state must be declared first in order to appear.
+                    </td>
+                    <td class="example">
+<xmp>
+.answer:hover {
+    background-color: #C0D6DF;
+}
+    
+.answer:active {
+    color: #ffffff;
+}
+</xmp>
+                    </td>
     </div>
 </body>
 </html>
