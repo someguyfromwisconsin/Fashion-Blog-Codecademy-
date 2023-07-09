@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+tr, td {
+    border: 1px solid rgba(0, 0, 255, 0.664);
+    border-collapse: collapse;
+}
+
+xmp {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.example {
+    color: white;
+    font-weight: bold;
+    background-color: black;
+} 
+
+.nobullet {
+    list-style-type: none;
+}
+
+em {
+    color: green;
+    font-weight: bold;
+}
+
+a {
+    color: blue;
+}
