@@ -39,9 +39,11 @@ em {
 a {
     color: blue;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 a:hover {
     color: orange;
     text-decoration: none;
+    cursor: pointer;
 }
