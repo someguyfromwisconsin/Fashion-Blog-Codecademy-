@@ -1571,6 +1571,33 @@ button:active {
 }
 </xmp>
                     </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Creating a breadcrumb arrow with CSS</td>
+                    <td>This example makes use of a couple of CSS tricks to create an arrow effect. We’re using the <em>::before</em> and <em>::after</em> pseudo-elements to add filled rectangles (with empty content) before and after each list item:</td>
+                    <td class="example">
+<xmp>
+.breadcrumb li a::before, .breadcrumb li a::after {
+    content: "";
+    position: absolute;
+    border-color: darkcyan;
+    border-style: solid;
+    border-width: 15px 5px;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">By setting a portion of the border to transparent, it creates the “tail” of the arrow:</td>
+                    <td class="example">
+<xmp>
+.breadcrumb li a::before {
+    left: -10px;
+    border-left-color: transparent;
+}
+</xmp>
+                    </td>
+                </tr>
     </div>
 </body>
 </html>
