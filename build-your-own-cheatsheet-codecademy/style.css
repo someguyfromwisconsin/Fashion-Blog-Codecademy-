@@ -5,6 +5,7 @@ body {
 table {
     border: 3px solid black;
     border-collapse: collapse;
+    margin-bottom: 30px;
 }
 
 th {
