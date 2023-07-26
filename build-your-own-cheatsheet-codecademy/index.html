@@ -1613,12 +1613,47 @@ button:active {
             </thead>
             <tbody>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td>display: flex;</td>
+                    <td>Flexbox</td>
+                    <td>The CSS display: <em>flex property </em>sets an HTML element as a block level flex container which takes the full width of its parent container. Any child elements that reside within the flex container are called flex items.
+                    <br>
+                    Flex items change their size and location in response to the size and position of their parent container.</td>
                     <td class="example">
 <xmp>
-example
+div {
+    display: flex;
+} 
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>justify-content:____</td>
+                    <td>justify-content Property</td>
+                    <td>The CSS justify-content flexbox property defines how the browser distributes space between and around content items along the main-axis of their container. This is when the content items do not use all available space on the major-axis (horizontally).
+                    <br>
+                    justify-content can have the values of:
+                    <br>
+                    <ul>
+                        <li><em>flex-start</em></li>
+                        <li><em>flex-end</em></li>
+                        <li><em>center</em></li>
+                        <li><em>space-between</em></li>
+                        <li><em>space-around</em></li>
+                    </ul>
+                    </td>
+                    <td class="example">
+<xmp>
+/* Items based at the center of the parent container: */
+div {
+    display: flex;
+    justify-content: center;
+}
+
+/* Items based at the upper-left side of the parent container: */
+div {
+    display: flex;
+    justify-content: flex-start;
+}
 </xmp>
                     </td>
                 </tr>
@@ -1632,7 +1667,11 @@ example
                         <td>&lt;tag&gt;</td>
                         <td>name</td>
                         <td>description</td>
-                        <td class="example"><xmp>example</xmp></td>
+                        <td class="example">
+<xmp>
+example
+</xmp>
+                        </td>
                     </tr>
 -->
 
