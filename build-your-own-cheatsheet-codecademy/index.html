@@ -1686,6 +1686,27 @@ div {
 </xmp>
                     </td>
                 </tr>
+                <tr>
+                    <td>flex-grow: (number, e.g. 1, 2, etc.);</td>
+                    <td colspan="2">Allows for specific items to grow to fill a container and also which items should grow proportionally more or less than others. In the example, the .container div has a display value of flex, so its three child divs will be positioned next to each other. If there is additional space in the .container div (in this case, if it is wider than 300 pixels), the flex items will grow to fill it. The .center div will stretch twice as much as the .side divs. For example, if there were 60 additional pixels of space, the center div would absorb 30 pixels and the side divs would absorb 15 pixels each.</td>
+                    <td class="example">
+<xmp>
+.container {
+    display: flex;
+}
+    
+    .side {
+    width: 100px;
+    flex-grow: 1;
+}
+    
+    .center {
+    width: 100px;
+    flex-grow: 2;
+}
+</xmp>
+                    </td>
+                </tr>
             </tbody>
     </div>
 </body>
