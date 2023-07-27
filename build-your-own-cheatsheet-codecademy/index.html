@@ -1617,8 +1617,7 @@ div {
                 </tr>
                 <tr>
                     <td>justify-content:____</td>
-                    <td>justify-content Property</td>
-                    <td>The CSS justify-content flexbox property defines how the browser distributes space between and around content items along the main-axis of their container. This is when the content items do not use all available space on the major-axis (horizontally).
+                    <td colspan="2">The CSS justify-content flexbox property defines how the browser distributes space between and around content items along the main-axis of their container. This is when the content items do not use all available space on the major-axis (horizontally).
                     <br>
                     justify-content can have the values of:
                     <br>
@@ -1648,8 +1647,7 @@ div {
                 </tr>
                 <tr>
                     <td>inline-flex</td>
-                    <td>inline-flex property</td>
-                    <td>The CSS <em>display: inline-flex</em> property sets an HTML element as an inline flex container which takes only the required space for the content. Any child elements that reside within the flex container are called flex items. Flex items change their size and location in response to the size and position of their parent container.</td>
+                    <td colspan="2">The CSS <em>display: inline-flex</em> property sets an HTML element as an inline flex container which takes only the required space for the content. Any child elements that reside within the flex container are called flex items. Flex items change their size and location in response to the size and position of their parent container.</td>
                     <td class="example">
 <xmp>
 .container {
@@ -1661,6 +1659,28 @@ div {
     width: 150px;
     height: auto;
 }
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>align-items</td>
+                    <td colspan="2">Makes it possible to space flex items vertically. There are five commonly used values for the align-items property:
+                        <ul>
+                            <li><em>flex-start</em></li>
+                            all elements will be positioned at the <b>top</b> of the parent container
+                            <li><em>flex-end</em></li>
+                            all elements will be positioned at the <b>bottom</b> of the parent container
+                            <li><em>center</em></li>
+                            the <b>center of all elements</b> will be positioned <b>halfway between the top and bottom</b> of the parent container
+                            <li><em>baseline</em></li>
+                            the <b>bottom of the content of all items</b> will be <b>aligned with each other</b>
+                            <li><em>stretch</em></li>
+                            if possible, the items will strech from top to bottom of the container (this is the default value; elements with a specified height will not stretch; elements with a minimum height or no height specified will stretch)
+                        </ul>
+                    </td>
+                    <td class="example">
+<xmp>
+example
 </xmp>
                     </td>
                 </tr>
