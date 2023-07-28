@@ -1717,21 +1717,32 @@ div {
                     <br>
                     Keep in mind, minimum and maximum widths will take precedence over flex-grow and flex-shrink. As with flex-grow, flex-shrink will only be employed if the parent container is too small or the browser is adjusted.</td>
                     <td class="example">
-<xmp>
-.container {
-    display: flex;
+<span class="code1">.container</span> {
+    <br>
+    &emsp;
+    <span class="code2">display</span>: <span class="code3">flex</span>;
+    <br>
 }
-    
-.side {
-    width: 100px;
-    flex-shrink: 1;
+<br> 
+<span class="code1">.side</span> {
+    <br>
+    &emsp;
+    <span class="code2">width</span>: <span class="code3">100px</span>;
+    <br>
+    &emsp;
+    <span class="code2">flex-shrink</span>: <span class="code3">1</span>;
+    <br>
 }
-    
-.center {
-    width: 100px;
-    flex-shrink: 2;
+    <br>
+<span class="code1">.center</span> {
+    <br>
+    &emsp;
+    <span class="code2">width</span>: <span class="code3">100px</span>;
+    <br>
+    &emsp;
+    <span class="code2">flex-shrink</span>: <span class="code3">2</span>;
+    <br>
 }
-</xmp>
                     </td>
                 </tr>
             </tbody>
