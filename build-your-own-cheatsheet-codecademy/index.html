@@ -1688,7 +1688,9 @@ div {
                 </tr>
                 <tr>
                     <td>flex-grow: (number, e.g. 1, 2, etc.);</td>
-                    <td colspan="2">Allows for specific items to grow to fill a container and also which items should grow proportionally more or less than others. In the example, the .container div has a display value of flex, so its three child divs will be positioned next to each other. If there is additional space in the .container div (in this case, if it is wider than 300 pixels), the flex items will grow to fill it. The .center div will stretch twice as much as the .side divs. For example, if there were 60 additional pixels of space, the center div would absorb 30 pixels and the side divs would absorb 15 pixels each.</td>
+                    <td colspan="2">Allows for specific items to <b>grow</b> to fill a container and also which items should grow proportionally more or less than others. 
+                    <br>
+                    In the example, the .container div has a display value of flex, so its three child divs will be positioned next to each other. If there is additional space in the .container div (in this case, if it is wider than 300 pixels), the flex items will grow to fill it. The .center div will stretch twice as much as the .side divs. For example, if there were 60 additional pixels of space, the center div would absorb 30 pixels and the side divs would absorb 15 pixels each.</td>
                     <td class="example">
 <xmp>
 .container {
@@ -1703,6 +1705,31 @@ div {
     .center {
     width: 100px;
     flex-grow: 2;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>flex-shrink</td>
+                    <td colspan="2">Allows for specific items to <b>shrink</b> to fill a container and also which items should <b>shrink</b> proportionally more or less than others.
+                    <br>
+                    In the example, the .center div will shrink twice as much as the .side divs if the .container div is too small to fit the elements within it. If the content is 60 pixels too large for the flex container that surrounds it, the .center div will shrink by 30 pixels and the outer divs will shrink by 15 pixels each. Margins are unaffected by flex-grow and flex-shrink.
+                    <br>
+                    Keep in mind, minimum and maximum widths will take precedence over flex-grow and flex-shrink. As with flex-grow, flex-shrink will only be employed if the parent container is too small or the browser is adjusted.</td>
+                    <td class="example">
+<xmp>
+.container {
+    display: flex;
+}
+    
+.side {
+    width: 100px;
+    flex-shrink: 1;
+}
+    
+.center {
+    width: 100px;
+    flex-shrink: 2;
 }
 </xmp>
                     </td>
