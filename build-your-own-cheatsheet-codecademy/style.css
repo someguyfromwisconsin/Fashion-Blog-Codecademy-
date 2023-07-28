@@ -49,10 +49,15 @@ a:hover {
     cursor: pointer;
 }
 
-.code1 {
+code1 {
+    color: #b4d353
+}
+
+.code2 {
     color: #83fff5
 }
 
-,code2 {
+,code3 {
     color: #ff8973
 }
+
