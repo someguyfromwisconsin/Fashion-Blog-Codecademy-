@@ -1687,6 +1687,29 @@ div {
                     </td>
                 </tr>
                 <tr>
+                    <td>flex</td>
+                    <td>Shorthand flex Property</td>
+                    <td>A shorthand way of specifying <em>grow</em>, <em>shrink</em>, and <em>basis</em> flex properties all in one line.
+                    <br>
+                    Not all three elements need to be declared. flex-grow, flex-shrink, but not flex-basis can be done. Flex-grow, flex-basis, but not flex-shrink can be declared. However, flex-shrink and flex-basis cannot be declared with only two values.
+                    </td>
+                    <td class="example">
+<span class="code1">.big</span> {
+<br>
+&emsp;
+<span class="code2">flex</span>: <span class="code3">2 1 150px</span>;
+<br>
+}
+<br>
+<span class="code1">.small</span> {
+    <br>
+    &emsp;
+    <span class="code2">flex</span>: <span class="code3">1 2 100px</span>;
+    <br>
+}
+                    </td>
+                </tr>
+                <tr>
                     <td>flex-grow: _;</td>
                     <td colspan="2">Allows for specific items to <b>grow</b> to fill a container and also which items should grow proportionally more or less than others. 
                     <br>
