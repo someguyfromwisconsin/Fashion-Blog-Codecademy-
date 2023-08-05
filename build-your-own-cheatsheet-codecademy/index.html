@@ -1799,6 +1799,64 @@ div {
 }
                     </td>
                 </tr>
+                <tr>
+                    <td>flex-wrap: ____</td>
+                    <td colspan="2">Allows for flex items to move to the next line when necessary. It allows for three values to be declared:
+                    <ul>
+                        <li>wrap</li>
+                        child elements of a flex container that don’t fit into a row will move down to the next line
+                        <li>wrap-reverse</li>
+                        the same functionality as wrap, but the order of rows within a flex container is reversed (for example, in a 2-row flexbox, the first row from a wrap container will become the second in wrap-reverse and the second row from the wrap container will become the first in wrap-reverse)
+                        <li>nowrap</li>
+                        prevents items from wrapping; this is the default value and is only necessary to override a wrap value set by a different CSS rule.
+                    </ul>
+                    In the example, three flex items are contained by a parent flex container. The flex container is only 250 pixels wide so the three 100 pixel wide flex items cannot fit inline. The flex-wrap: wrap; setting causes the third, overflowing item to appear on a new line, below the other two items.
+                    </td>
+                    <td class="example">
+<span class="code1">.container</span> {
+<br>
+    &emsp;<span class="code2">display</span>: <span class="code3">inline-flex</span>;
+    <br>
+    &emsp;<span class="code2">flex-wrap</span>: <span class="code3">wrap</span>;
+    <br>
+    &emsp;<span class="code2">width</span>: <span class="code3">250px</span>;
+    <br>
+}
+<br>
+<span class="code1">.item</span> {
+    <br>
+    &emsp;<span class="code2">width</span>: <span class="code3">100px</span>;
+    <br>
+    &emsp;<span class="code2">height</span>: <span class="code3">100px</span>;
+    <br>
+}
+                </tr>
+                <tr>
+                    <td>flex-direction: _____</td>
+                    <td colspan="2">Allows for switching of main and cross axes. It accepts four values:
+                        <ul>
+                            <li><em>row</em></li>
+                            elements will be positioned from left to right across the parent element starting from the top left corner (default).
+                            <li><em>row-reverse</em></li>
+                            elements will be positioned from right to left across the parent element starting from the top right corner.
+                            <li><em>column</em></li>
+                            elements will be positioned from top to bottom of the parent element starting from the top left corner.
+                            <li><em>column-reverse</em></li>
+                            elements will be positioned from the bottom to the top of the parent element starting from the bottom left corner.
+                        </ul>
+                    </td>
+                    <td class="example">
+<span class="code1">.container</span> {
+<br>
+&emsp;<span class="code2">display</span>: <span class="code3">flex</span>;
+<br>
+&emsp;<span class="code2">flex-direction</span>: <span class="code3">column</span>;
+<br>
+&emsp;<span class="code2">width</span>: <span class="code3">1000px</span>;
+<br>
+}
+                    </td>
+                </tr>
             </tbody>
     </div>
 </body>
@@ -1812,8 +1870,7 @@ div {
                         <td class="example">
 <span class="code1">parent</span> {
     <br>
-    &emsp;
-    <span class="code2">child</span>: <span class="code3">attribute</span>;
+    &emsp;<span class="code2">child</span>: <span class="code3">attribute</span>;
     <br>
 }
                         </td>
